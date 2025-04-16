@@ -1,0 +1,61 @@
+# Entorno virtual
+venv/
+ENV/
+env/
+.venv/
+
+# Archivos compilados de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos del editor (VSCode, PyCharm)
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de logs
+*.log
+
+# Archivos de base de datos SQLite
+*.sqlite3
+
+# Configuración secreta (por ejemplo variables de entorno)
+.env
+.env.*
+
+# Archivos de migraciones (si no querés versionarlos, opcional)
+# **/migrations/
+# !**/migrations/__init__.py
+
+# Archivos de caché y temporales
+*.bak
+*.tmp
+*.swp
+
+# Carpeta de static generada
+staticfiles/
+static/
+
+# Archivos generados por collectstatic (opcional si usás WhiteNoise o S3)
+static_root/
+media/
+
+# Cobertura de tests
+htmlcov/
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Archivos de compilación de paquetes
+dist/
+build/
+*.egg-info/
