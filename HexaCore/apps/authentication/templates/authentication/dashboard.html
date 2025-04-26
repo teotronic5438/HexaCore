@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><title>Dashboard</title></head>
+<body>
+    <h2>Bienvenido, {{ request.user.username }}</h2>
+    <p>Rol: {{ rol }}</p>
+
+    {% if rol == 'superusuario' %}
+        <ul>
+            <li><a href="#">Gestión de usuarios</a></li>
+            <li><a href="#">Reportes</a></li>
+        </ul>
+    {% elif rol == 'tecnico' %}
+        <ul>
+            <li><a href="#">Paletizar equipos</a></li>
+        </ul>
+    {% else %}
+        <p>No tenés permisos definidos</p>
+    {% endif %}
+
+    <a href="{% url 'logout' %}">Cerrar sesión</a>
+</body>
+</html>
